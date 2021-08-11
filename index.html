@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="home1.html">
+
+  </head>
+  <body style="background-color: #179b81; margin-top: 100px;" >
+     
+    <div class="signup-form">
+        
+     
+        <h2>Sign Up</h2>
+        <p>Please fill in this form to create an account!</p>
+        <hr />
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <span class="fa fa-user"></span>
+              </span>
+            </div>
+            <input
+            id="username"
+              type="text"
+              class="form-control"
+              name="username"
+              placeholder="Username"
+              required="required"
+            />
+          </div>
+          
+        </div>
+           
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <span class="fa fa-user"></span>
+              </span>
+            </div>
+            <input
+            id="phone"
+              type="number"
+              class="form-control"
+              name="phone"
+              placeholder="Phone Number"
+              required="required"
+            />
+          </div>
+          
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <span class="fa fa-user"></span>
+              </span>
+            </div>
+            <input
+            id="country"
+              type="text"
+              class="form-control"
+              name="country"
+              placeholder="Country"
+              required="required"
+            />
+          </div>
+          
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fa fa-paper-plane"></i>
+              </span>
+            </div>
+            <input
+            id="email"
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email Address"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fa fa-lock"></i>
+              </span>
+            </div>
+            <input
+            id="password"
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="Password"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+           
+              <a style="cursor: pointer;  font-weight: bolder;" onclick="window.location.href='/login.html'" >Already have account ? Go to Login Page</a>
+            
+          </div>
+          <div class="form-group">
+            <button  onclick="store()"  class="btn btn-primary btn-lg">Sign Up</button>
+          </div>
+       
+       
+        </div>
+      
+      
+    
+ 
+
+
+ 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAhRW-pCXu-VUhSaEj99Wzl3GR_LLIyVpQ",
+    authDomain: "my-app-82b0b.firebaseapp.com",
+    projectId: "my-app-82b0b",
+    storageBucket: "my-app-82b0b.appspot.com",
+    messagingSenderId: "1005070195075",
+    appId: "1:1005070195075:web:e96918be1cfb89d5dc7eb6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="app.js"></script>
+  </body>
+</html>
